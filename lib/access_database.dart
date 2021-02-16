@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 
-class AccessDatabase{
+class AccessDatabase {
   Future<Database> initDb() async {
     Directory directory = await getApplicationDocumentsDirectory();
     String path = directory.path + 'contact.db';
@@ -13,7 +13,7 @@ class AccessDatabase{
   void _createDb(Database db, int version) async {
     await db.execute('''
       CREATE TABLE contact (
-        id INTERGER PRIMARY KEY AUTOINCREMENT,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
         phone TEXT,
         date TEXT

@@ -22,7 +22,7 @@ class _EntryFormState extends State<EntryForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: contact == null ? Text('Tambah') : Text('Rubah'),
+        title: contact == null ? Text('Tambah') : Text('Ubah'),
         leading: Icon(Icons.keyboard_arrow_left),
       ),
       body: Padding(

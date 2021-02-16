@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
     elevation: 2.0,
     child: ListTile(
       leading: CircleAvatar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.lightBlue,
         child: Icon(Icons.people),
       ),
       title: Text(
